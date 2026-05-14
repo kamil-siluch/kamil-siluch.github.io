@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kamil Siłuch — bio dla prasy</title>
+  <meta name="description" content="Bio dla prasy: Kamil Siłuch — radca prawny, ekspert prawa podatkowego i gospodarczego." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --c-graphite: #1c1f24;
+      --c-off-white: #f1ece2;
+      --c-paper: #faf6ee;
+      --c-copper: #b87333;
+      --c-copper-soft: #d4a574;
+      --c-text-on-light: #1c1f24;
+      --c-text-muted-light: #5a5e66;
+      --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { background: var(--c-off-white); }
+    body {
+      font-family: var(--font);
+      color: var(--c-text-on-light);
+      line-height: 1.65;
+      font-size: 16px;
+      padding: 3rem 1.5rem;
+    }
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      background: var(--c-paper);
+      padding: 3.5rem 3rem;
+      box-shadow: 0 1px 0 rgba(28, 31, 36, 0.04);
+    }
+    .head {
+      display: flex;
+      gap: 1.75rem;
+      align-items: center;
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid rgba(28, 31, 36, 0.12);
+      margin-bottom: 2rem;
+    }
+    .photo {
+      width: 110px;
+      height: 138px;
+      object-fit: cover;
+      object-position: center 18%;
+      background: var(--c-graphite);
+      border-radius: 44% 70% 70% 50% / 30% 30% 70% 70%;
+      flex-shrink: 0;
+    }
+    .name {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      color: var(--c-graphite);
+    }
+    .role {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--c-copper);
+      font-weight: 500;
+    }
+    .label {
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--c-copper);
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .label:first-of-type { margin-top: 0; }
+    p + p { margin-top: 0.9rem; }
+    p { max-width: 60ch; }
+    .lead {
+      font-size: 1.15rem;
+      line-height: 1.55;
+      color: var(--c-graphite);
+    }
+    .contact {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(28, 31, 36, 0.12);
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      column-gap: 1.25rem;
+      row-gap: 0.35rem;
+      font-size: 0.95rem;
+    }
+    .contact dt {
+      color: var(--c-text-muted-light);
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      align-self: center;
+    }
+    .contact dd a {
+      color: var(--c-copper);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact dd a:hover { text-decoration: underline; }
+
+    @media (max-width: 560px) {
+      body { padding: 1.5rem 1rem; }
+      .page { padding: 2rem 1.5rem; }
+      .head { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .photo { width: 96px; height: 120px; }
+      .name { font-size: 1.6rem; }
+    }
+
+    @media print {
+      body { padding: 0; background: #fff; }
+      .page { box-shadow: none; padding: 0; max-width: none; background: #fff; }
+      .photo { width: 100px; height: 125px; }
+      .label { color: #000; }
+      .role { color: #555; }
+      .contact dd a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="head">
+      <img class="photo" src="/bio/kamil-siluch-foto.jpg" alt="Kamil Siłuch" />
+      <div>
+        <h1 class="name">Kamil Siłuch</h1>
+        <p class="role">radca prawny · ekspert prawa podatkowego i gospodarczego</p>
+      </div>
+    </header>
+
+    <p class="lead">
+      Od 25 lat reprezentuje przedsiębiorców w najtrudniejszych sprawach
+      podatkowych i gospodarczych w Polsce.
+    </p>
+
+    <h2 class="label">Doświadczenie</h2>
+    <p>
+      Od 25 lat stały współpracownik Kancelarii Prawnej Witold Modzelewski.
+      Związany z nią od czasów studenckich; przeszedł kolejne szczeble — od
+      specjalisty, przez dyrektora działu, aż do Dyrektora Generalnego, którym
+      jest od 2017 roku.
+    </p>
+
+    <h2 class="label">Specjalizacja</h2>
+    <p>
+      Specjalizuje się w sprawach podatkowych, w szczególności dotyczących
+      podatku VAT, podatku od nieruchomości, podatków dochodowych oraz
+      postępowań podatkowych. Reprezentuje przedsiębiorców w sporach z
+      organami podatkowymi i skarbowymi oraz przed sądami administracyjnymi.
+      Prowadzi również sprawy karno-skarbowe.
+    </p>
+
+    <h2 class="label">Profil ekspercki</h2>
+    <p>
+      W mediach komentuje tematy związane z podatkami, zmianami legislacyjnymi,
+      sporami z administracją skarbową oraz wpływem prawa na prowadzenie
+      biznesu. W wypowiedziach koncentruje się na praktycznym znaczeniu
+      regulacji: co się zmienia, kogo dotyczy, jakie rodzi ryzyka i jakich
+      decyzji wymaga od zarządów.
+    </p>
+    <p>
+      Łączy precyzję prawnika z praktycznym rozumieniem biznesu. Tłumaczy
+      przepisy w sposób zrozumiały dla zarządów i osób decyzyjnych, z
+      naciskiem na ryzyko, konsekwencje i realne decyzje.
+    </p>
+
+    <dl class="contact">
+      <dt>Telefon</dt>
+      <dd><a href="tel:+48607058605">+48 607 058 605</a></dd>
+      <dt>E-mail</dt>
+      <dd><a href="mailto:kamilsiluch@wp.pl">kamilsiluch@wp.pl</a></dd>
+    </dl>
+  </main>
+</body>
+</html>
